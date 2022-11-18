@@ -1,0 +1,209 @@
+body{
+    background:lightgrey;
+}
+.formBody{
+    background: white;
+    padding: 22px;
+    margin-top: 16px;
+    width: 50%;
+}
+.formBody label{
+    font-weight: 600;
+}
+.heading{
+    text-align: center;
+    background-color: #183A69;
+    color: white;
+    padding: 6px 0px;
+    margin-bottom: 20px;
+}
+.submit{
+    background: #A5BF3D;
+    width: 100%;
+}
+.dropDown{
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    background: #f1f3f4;
+    color: #212529;
+}
+.serialNo{
+    display: none;
+}
+@media only screen and (max-width: 750px) {
+    .formBody{
+        width: 94%;
+    }
+}
+.partNos{
+    background: #f1f3f4;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+.partNos img{
+    height: 25px !important;
+    width: 25px;
+}
+.partNos input{
+    width: 90%;
+}
+.partNos select{
+    width: 90%;
+    padding: 2px;
+    background: #f1f3f4;
+    margin-bottom: 10px;
+}
+.partNos button{
+    border:none;
+    background: none;
+}
+.addItem{
+    padding: 2px 10px;
+    background: #183A69;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.addItemsButton{
+    width: 100%;
+    padding: 0px;
+    font-size: 12px;
+    margin: 0px;
+    background: #3e6a47;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+  }
+  .poItems{
+    padding: 10px;
+  }
+  .rfqOfferData{
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    column-gap: 4%;
+  }
+  .rfqOfferData div{
+    /* padding: 15px; */
+    background: #e0e0e0;
+    box-shadow: 0 0 10px #00000030;
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
+  .rfqOfferData button{
+    box-shadow: 0 0 6px #000;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 16px;
+    /* margin: 3px 0px; */
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin: 20px;
+    font-size: 12px;
+  }
+  .rfqOfferData button:hover{
+    background-color: #63896b;
+    color:white;
+  }
+  .rfqOfferData button:hover:after{
+    content: '___Add';
+  }
+  .modal-content input{
+    width: 50%;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border-style: double;
+    padding: 0px 6px;
+  }
+  .modal-content img{
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    .rfqOfferData{
+        display: block;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+  }  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+    
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
+
+  .addSelectedPOItems{
+    display: block;
+    float: right;
+    padding: 2px 20px;
+    background: #183A69;
+    color:white;
+  }
+  .poListItem{
+    background: #e0e0e0 !important;
+    padding: 12px;
+    margin-top: 10px;
+  }
+  .removePOListItem{
+    background-color: #0f2f56;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 14px;
+    font-weight: bold;
+    border: none;
+  }
+  .addedPOItems{
+    display: grid;
+    grid-template-columns: 26% 15% 16% 16% 16%;
+    column-gap: 3%;
+    background: #e0e0e0;
+    text-align: center;
+  }
+  .addedPOItems div{
+    border:1px solid;
+    overflow: hidden;
+  }
+  .addedPOItems div p{
+    margin: 0px 0px;
+  }
+  .loader {
+    border: 25px solid #979a9e;
+    border-radius: 50%;
+    border-top: 25px solid #0f2f56;
+    width: 131px;
+    height: 131px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    right: 42%;
+    top: 42%;
+    display: none;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
